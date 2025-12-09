@@ -52,6 +52,14 @@
   display: block;
 }
 
+/* Shopping cart */
+.products, .cart {
+    margin: 20px;
+}
+.product, .cart-item {
+    margin-bottom: 10px;
+}
+
 @media (min-width: 768px) {
   .site-header {
     align-items: center;
