@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rob's Home Gym Equipment Emporium</title>
+    <title>Home Gym Equipment Emporium</title>
     <link rel="stylesheet" href="../css_files/styles.css">
 </head>
+
 <body>
+    <a id="top"></a>
     <header class="site-header">
         <button class="menu-toggle" aria-label="Toggle navigation">
-        ☰
+            ☰
         </button>
-        <nav class="main-nav">          
+        <nav class="main-nav">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="background.html">Background</a></li>
@@ -21,20 +24,82 @@
                 <li><a href="storeLocations.html">Store Locations</a></li>
             </ul>
         </nav>
-        </header>
-        <div class="products">
-        <div class="product">
-            <h2>Product 1</h2>
-            <p>€10</p>
-            <button onclick="addToCart('Product 1', 10)">Add to Cart</button>
+    </header>
+    <main>
+    <div class="products">
+
+    <h1>Calisthenics</h1>
+    <div class="product-grid">
+        <div class="product-card">
+            <img src="../media/pull_up_dip_station.avif" alt="">
+            <h2>Pull-up & Dip Station</h2>
+            <p>€175</p>
+            <button onclick="addToCart('Pull-up & Dip Station', 175)">Add to Cart</button>
         </div>
-        <!-- Add more products as needed -->
+
+        <div class="product-card">
+            <img src="../media/pull_up_bar.avif" alt="">
+            <h2>Wall-Mounted Pull-up Bar</h2>
+            <p>€80</p>
+            <button onclick="addToCart('Pull-up Bar', 80)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="../media/dip_bars.avif" alt="">
+            <h2>Dip Bars</h2>
+            <p>€65</p>
+            <button onclick="addToCart('Dip Bars', 65)">Add to Cart</button>
+        </div>
     </div>
+
+    <h1>Cardio</h1>
+    <div class="product-grid">
+        <div class="product-card">
+            <img src="../media/incline_treadmill.avif" alt="">
+            <h2>Incline Treadmill</h2>
+            <p>€1000</p>
+            <button onclick="addToCart('Treadmill', 1000)">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="../media/foldable_treadmill.avif" alt="">
+            <h2>Foldable Treadmill</h2>
+            <p>€720</p>
+            <button onclick="addToCart('Treadmill', 1000)">Add to Cart</button>
+        </div>
+    </div>
+
+    <h1>Weight Training</h1>
+    <div class="product-grid">
+        <div class="product-card">
+            <img src="../media/adjustable_dumbbells.avif" alt="">
+            <h2>Adjustable Dumbbells</h2>
+            <p>€160</p>
+            <button onclick="addToCart('Dumbbells', 160)">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="../media/squat_rack.avif" alt="">
+            <h2>Squat Rack</h2>
+            <p>€195</p>
+            <button onclick="addToCart('Dumbbells', 160)">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="../media/barbell.avif" alt="">
+            <h2>Barbell</h2>
+            <p>€40</p>
+            <button onclick="addToCart('Dumbbells', 160)">Add to Cart</button>
+        </div>
+    </div>
+</div>
     <div class="cart">
         <h2>Shopping Cart</h2>
         <ul id="cart-items"></ul>
         <p>Total: €<span id="cart-total">0</span></p>
     </div>
-        <script src="../js_files/script.js"></script>
+    </main>
+    <footer>
+        <a href="#top">Back to top</a>
+    </footer>
+    <script src="../js_files/script.js"></script>
 </body>
+
 </html>
