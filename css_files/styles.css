@@ -9,12 +9,13 @@ html {
 
 /* Create the hero image */
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/home_gym_hero_image_v1.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/home_gym_hero_image_v1.avif");
   height: 50%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  transition: background-image 1s ease-in;
 }
 
 /* Place text in the middle of the image */
@@ -29,7 +30,7 @@ html {
 
 .hero-text button {
   padding: 0.75rem 1.5rem;
-  background: #006ad4;
+  background-color: #006ad4;
   border: none;
   border-radius: 4px;
   font-size: 1rem;
@@ -104,6 +105,7 @@ html {
 .main-nav.open {
   display: block;
   position: absolute;
+  z-index: 1;
   top: 4rem;
   width: 30%;
   left: 0;
