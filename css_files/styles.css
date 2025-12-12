@@ -46,6 +46,13 @@ html {
   box-sizing: border-box;
 }
 
+/* Adjust slideshow images*/
+#slideshow {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 .site-header {
   display: flex;
   align-items: center;
@@ -86,7 +93,7 @@ html {
   padding: 0.5rem 1rem;
   color: #fff;
   text-decoration: none;
-  transition: background 0.3s;
+  transition: 0.3s;
 }
 
 .main-nav a:hover,
@@ -96,11 +103,14 @@ html {
 
 .main-nav.open {
   display: block;
+  position: absolute;
+  top: 4rem;
+  width: 30%;
+  left: 0;
 }
 
-/* Shopping cart */
-.products,
-.cart {
+/* Shop page */
+.products {
   margin: 20px;
 }
 
@@ -155,10 +165,16 @@ html {
   background: #0088ff;
 }
 
-.product-images, .product-names {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
+.shopping-cart {
+  position: fixed;
+  bottom: 20px; /* Position 20px from the bottom of the screen */
+  right: 20px;  /* Position 20px from the right of the screen */
+  /* Add other styling like background-color, width, height, etc. */
+  background-color: #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+  padding: 20px;
+  border: 1px solid #ccc;
+  z-index: 100; /* Ensures it is above other content */
 }
 
 main {
@@ -200,6 +216,10 @@ footer a {
   /* Hide the button, show nav inline */
   .menu-toggle {
     display: none;
+  }
+
+  .main-nav.open {
+    position: static;
   }
 
   .main-nav {

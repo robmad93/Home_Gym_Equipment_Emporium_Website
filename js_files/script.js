@@ -1,3 +1,4 @@
+/* Navigation bar */
 const menuButton = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.main-nav');
 
@@ -5,6 +6,7 @@ menuButton.addEventListener('click', function () {
   nav.classList.toggle('open');
 });
 
+/* Shopping cart */
 let cart = [];
 
 function addToCart(name, price) {
@@ -38,4 +40,20 @@ function updateCart() {
     total += product.price * product.quantity;
   });
   cartTotal.textContent = total;
+}
+
+/* Automatic image carousel */
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("automaticSlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 2000); // Change image every 2 seconds
 }
