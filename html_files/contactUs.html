@@ -4,13 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Gym Equipment Emporium</title>
+    <title>Contact Us | Home Gym Equipment Emporium</title>
     <link rel="stylesheet" href="../css_files/styles.css">
 </head>
 
 <body>
     <a id="top"></a>
     <header class="site-header">
+        <a href="home.html" class="site-logo">
+            <img src="../media/logo.png">
+        </a>
         <button class="menu-toggle" aria-label="Toggle navigation">
             ☰
         </button>
@@ -25,17 +28,56 @@
         </nav>
     </header>
     <main>
-        <h1>Contact Us</h1>
-        <p>We currently have stores in Ennis and Kilrush, with plans to add more locations in the future.</p>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d213.00457427807174!2d-8.986720794667908!3d52.8426975400201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485b12d31c9116d1%3A0xd25dd71b1c5e2340!2s14%20Summerhill%2C%20Clonroad%20Beg%2C%20Ennis%2C%20Co.%20Clare%2C%20V95%20E16V!5e0!3m2!1sen!2sie!4v1765277289027!5m2!1sen!2sie"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <br><br>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d179.94901931948644!2d-9.483624535570623!3d52.64018285071469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485ade7216341a23%3A0xca01f353c4ef958b!2s7-8%20Vandeleur%20St%2C%20Kilrush%2C%20Co.%20Clare%2C%20V15%20N264!5e0!3m2!1sen!2sie!4v1765277526471!5m2!1sen!2sie"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <section>
+            <h1>Frequently Asked Questions</h1>
+
+            <details class="faq-item">
+                <summary>Do you offer nationwide delivery?</summary>
+                <p>Yes, we offer nationwide delivery across Ireland. Orders over €100 qualify for free delivery.</p>
+            </details>
+
+            <details class="faq-item">
+                <summary>How long does delivery take?</summary>
+                <p>Delivery typically takes between 3–5 working days, depending on your location.</p>
+            </details>
+
+            <details class="faq-item">
+                <summary>Do your products come with a warranty?</summary>
+                <p>All of our equipment includes a minimum 12-month manufacturer warranty.</p>
+            </details>
+
+            <details class="faq-item">
+                <summary>Can I return an item if I’m not satisfied?</summary>
+                <p>Yes, we offer a 30-day satisfaction guarantee. Items must be returned unused and in original
+                    packaging.</p>
+            </details>
+
+            <details class="faq-item">
+                <summary>Do you provide assembly instructions?</summary>
+                <p>Yes, all equipment comes with printed instructions, and many products include video tutorials.</p>
+            </details>
+        </section>
+        <section>
+            <h1>Contact Us</h1>
+            <p>If you have any questions about our products or services, please fill out the form below.</p>
+
+            <form id="contactForm">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+
+            <div id="successMessage" style="display:none;">
+                <h2>Thank you!</h2>
+                <p>Your message has been successfully received. We'll get back to you shortly.</p>
+            </div>
+        </section>
     </main>
     <footer>
         <p>© 2025 Home Gym Equipment Emporium. All rights reserved.</p>
