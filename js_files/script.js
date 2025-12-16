@@ -1,28 +1,28 @@
-document.addEventListener("DOMContentLoaded", function() {
-    // Navigation bar toggle
-    const menuButton = document.querySelector('.menu-toggle');
-    const nav = document.querySelector('.main-nav');
+document.addEventListener("DOMContentLoaded", function () { // /Waits for page to load
+  // Navigation bar toggle
+  const menuButton = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('.main-nav');
 
-    if (menuButton && nav) {
-        menuButton.addEventListener('click', function () {
-            nav.classList.toggle('open');
-        });
-    }
+  if (menuButton && nav) {
+    menuButton.addEventListener('click', function () {
+      nav.classList.toggle('open');
+    });
+  }
 
-    // Contact form
-    const form = document.getElementById("contactForm");
-    const successMessage = document.getElementById("successMessage");
+  // Contact form
+  const form = document.getElementById("contactForm");
+  const successMessage = document.getElementById("successMessage");
 
-    if (form && successMessage) {
-        form.addEventListener("submit", function (e) {
-            e.preventDefault(); // Prevent page reload
-            form.style.display = "none";
-            successMessage.style.display = "block";
-        });
-    }
+  if (form && successMessage) {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault(); // Prevent page reload
+      form.style.display = "none";
+      successMessage.style.display = "block";
+    });
+  }
 });
 
-/* Shopping cart */
+// Shopping cart
 let cart = [];
 
 function addToCart(name, price) {
@@ -62,18 +62,18 @@ function updateCart() {
 }
 
 function goToCheckout() {
-    window.location.href = "checkout.html";
+  window.location.href = "checkout.html";
 }
 
-/* Enable checkout button when cart has items */
+// Enable checkout button when cart has items 
 function updateCheckoutButton() {
-    const cartItems = document.getElementById("cart-items");
-    const checkoutBtn = document.getElementById("checkoutBtn");
+  const cartItems = document.getElementById("cart-items");
+  const checkoutBtn = document.getElementById("checkoutBtn");
 
-    checkoutBtn.disabled = cartItems.children.length === 0;
+  checkoutBtn.disabled = cartItems.children.length === 0;
 }
 
-/* Automatic image carousel */
+// Automatic image carousel 
 var slideIndex = 0;
 carousel();
 
@@ -84,7 +84,7 @@ function carousel() {
     x[i].style.display = "none";
   }
   slideIndex++;
-  if (slideIndex > x.length) {slideIndex = 1}
-  x[slideIndex-1].style.display = "block";
+  if (slideIndex > x.length) { slideIndex = 1 }
+  x[slideIndex - 1].style.display = "block";
   setTimeout(carousel, 2000); // Change image every 2 seconds
 }
