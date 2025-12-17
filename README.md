@@ -58,9 +58,10 @@ No server or build tools are required because the project runs entirely in the b
 
 ## Author
 
-Developed by Robert Madigan
+Developed by Robert Madigan,
 Google Software Developer Apprentice
 
 ## Acknowledgements
 
 A special thanks to Pexels.com and Decathlon.com for the images used. Also, a special thanks to Balsamiq.com for providing the platform that produced the wireframes.
+
