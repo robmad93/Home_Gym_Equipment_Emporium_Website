@@ -70,7 +70,10 @@ function updateCheckoutButton() {
   const cartItems = document.getElementById("cart-items");
   const checkoutBtn = document.getElementById("checkoutBtn");
 
-  checkoutBtn.disabled = cartItems.children.length === 0;
+  const hasItems = cartItems.children.length > 0;
+
+  checkoutBtn.disabled = !hasItems;
+  checkoutBtn.classList.toggle("pulse", hasItems);
 }
 
 // Automatic image carousel 

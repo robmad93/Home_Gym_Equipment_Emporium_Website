@@ -297,6 +297,25 @@ footer a {
   list-style: none;
 }
 
+/* Pulse animation for shopping cart */
+.pulse {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
 #cart-items li {
   padding: 0.25rem 0;
 }
