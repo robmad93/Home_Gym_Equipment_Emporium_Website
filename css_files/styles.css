@@ -67,7 +67,8 @@ html {
 /* Site logo */
 .site-logo {
   display: block;
-  margin-bottom: 0.5rem; /* space between logo and nav */
+  margin-bottom: 0.5rem;
+  /* space between logo and nav */
   text-align: center;
 }
 
@@ -224,18 +225,19 @@ footer a {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
 }
+
 .product-card {
   background: #fff;
   border-radius: 6px;
   padding: 1rem;
   text-align: center;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .product-card:hover {
   transform: scale(1.05);
-  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
 }
 
 /* Product images */
@@ -274,11 +276,11 @@ footer a {
 
 .shopping-cart {
   position: fixed;
-  bottom: 20px; 
-  right: 20px; 
+  bottom: 20px;
+  right: 20px;
   max-height: 80vh;
   background-color: #fff;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
   padding: 20px;
   border: 1px solid #ccc;
   z-index: 100;
@@ -322,7 +324,7 @@ footer a {
   background: #fff;
   padding: 1rem;
   border-radius: 6px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .faq-item summary {

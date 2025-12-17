@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,78 +9,79 @@
 </head>
 
 <body>
-<header class="site-header">
-     <a href="shop.html" class="back-button">← Back to Shop</a>
-</header>
+    <header class="site-header">
+        <a href="shop.html" class="back-button">← Back to Shop</a>
+    </header>
 
-<main>
-<section id="checkoutSection">
-    <h1>Checkout</h1>
+    <main>
+        <section id="checkoutSection">
+            <h1>Checkout</h1>
 
-    <form id="checkoutForm">
+            <form id="checkoutForm">
 
-        <h2>Delivery Method</h2>
-        <label>
-            <input type="radio" name="delivery" value="delivery" required>
-            Home Delivery
-        </label><br>
-        <label>
-            <input type="radio" name="delivery" value="collection">
-            Collect In-Store
-        </label>
+                <h2>Delivery Method</h2>
+                <label>
+                    <input type="radio" name="delivery" value="delivery" required>
+                    Home Delivery
+                </label><br>
+                <label>
+                    <input type="radio" name="delivery" value="collection">
+                    Collect In-Store
+                </label>
 
-        <h2>Customer Details</h2>
+                <h2>Customer Details</h2>
 
-        <label>Name</label>
-        <input type="text" required>
+                <label>Name</label>
+                <input type="text" required>
 
-        <label>Email</label>
-        <input type="email" required>
+                <label>Email</label>
+                <input type="email" required>
 
-        <label>Address</label>
-        <input type="text">
+                <label>Address</label>
+                <input type="text">
 
-        <h2>Payment Details</h2>
+                <h2>Payment Details</h2>
 
-        <label>Card Number</label>
-        <input type="text" placeholder="1234 5678 9012 3456" required>
+                <label>Card Number</label>
+                <input type="text" placeholder="1234 5678 9012 3456" required>
 
-        <label>Expiry Date</label>
-        <input type="text" placeholder="MM/YY" required>
+                <label>Expiry Date</label>
+                <input type="text" placeholder="MM/YY" required>
 
-        <label>CVV</label>
-        <input type="text" placeholder="123" required>
+                <label>CVV</label>
+                <input type="text" placeholder="123" required>
 
-        <button type="submit">Complete Purchase</button>
-    </form>
+                <button type="submit">Complete Purchase</button>
+            </form>
 
-    <!-- Success Message -->
-    <div id="paymentSuccess" style="display:none;">
-        <h2>Payment Successful!</h2>
-        <p>
-            Thank you for your purchase!<br><br>
-            Your payment has been successfully processed and your receipt
-            has been sent to your email address.
-        </p>
-        <a href="shop.html">Return to Shop</a>
-    </div>
+            <!-- Success Message -->
+            <div id="paymentSuccess" style="display:none;">
+                <h2>Payment Successful!</h2>
+                <p>
+                    Thank you for your purchase!<br><br>
+                    Your payment has been successfully processed and your receipt
+                    has been sent to your email address.
+                </p>
+                <a href="shop.html">Return to Shop</a>
+            </div>
 
-</section>
-</main>
+        </section>
+    </main>
 
-<script>
-const form = document.getElementById("checkoutForm");
-const success = document.getElementById("paymentSuccess");
+    <script>
+        const form = document.getElementById("checkoutForm");
+        const success = document.getElementById("paymentSuccess");
 
-form.addEventListener("submit", function(e) {
-    e.preventDefault();
-    form.style.display = "none";
-    success.style.display = "block";
-});
-</script>
-<footer>
+        form.addEventListener("submit", function (e) {
+            e.preventDefault();
+            form.style.display = "none";
+            success.style.display = "block";
+        });
+    </script>
+    <footer>
         <p>© 2025 Home Gym Equipment Emporium. All rights reserved.</p>
         <a href="#top">Back to top</a>
     </footer>
 </body>
+
 </html>
